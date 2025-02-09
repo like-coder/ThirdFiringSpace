@@ -3,9 +3,10 @@
 #include "CoreMinimal.h"
 #include "MyEnum.generated.h"
 
-UENUM()
-enum FGun : uint8
+UENUM(BlueprintType)
+enum class UsingGun : uint8
 {
+	None = 0,
 	Pistol = 1,
 	AK47,
 };
